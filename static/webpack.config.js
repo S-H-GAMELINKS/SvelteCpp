@@ -4,4 +4,12 @@ module.exports = {
         filename: 'index.js',
         path: `${__dirname}`
     },
+    module: {
+        rules: [
+            {
+                test: /\.svelte$/,
+                use: 'svelte-loader',
+            }
+        ]
+    }
 }
